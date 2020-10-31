@@ -1,0 +1,23 @@
+<div class="container">
+
+    <h4>Schession Scheduled</h4>
+
+    <ul class="list-group w-100">
+        <li class=" bag list-group-item d-flex justify-content-between w-100">
+            <span> Student Name</span>       
+            <span> Scheduled Time</span>
+        </li>
+    </ul>
+<ul class="list-group w-100" *ngFor="let s of session">
+    <li class="list-group-item d-flex justify-content-between w-100">
+      <span>
+        {{s.tutorName }}
+      </span>        
+      <span>
+        {{ s.time }}
+      </span>
+
+    </li>
+  </ul>
+</div>
+  

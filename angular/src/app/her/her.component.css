@@ -1,0 +1,28 @@
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    font: 1em Helvetica;
+    color: rgb(255, 0, 0);
+    
+    /* Background styles */
+    background-image:  url(../../assets/ehstoday_9194_elearning.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);     */
+}
+
+
+
+  h1{font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+  h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }

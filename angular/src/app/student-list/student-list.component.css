@@ -1,0 +1,47 @@
+h4{font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+h2{font-family: Helvetica Neue,Helvetica,Arial,sans-serif; }
+
+.bag{
+    background-color: blueviolet;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    flex: 0 0 50%;
+    border: 1px solid grey;
+    padding: 1em;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* #customers tr:nth-child(even){background-color: #ffffff;} */
+  
+  #customers tr:hover {background-color: rgb(224, 227, 255);}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1f1146;
+    color: white;
+  }

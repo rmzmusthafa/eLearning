@@ -1,0 +1,84 @@
+<div class="container">
+
+    <h4> Student List</h4>
+
+    <!-- <ul class="list-group w-100">
+        <li class=" bag list-group-item d-flex justify-content-between w-100">
+            <span> First Name</span>       
+            <span>Last Name</span>
+            <span>Email</span>
+            <span>Tutor</span>
+
+            <span>Time</span>
+            <span>Action</span>
+
+        </li>
+    </ul>
+<ul class="list-group w-100" *ngFor="let user of users">
+    <li class="list-group-item d-flex justify-content-between w-100">
+      <span>
+        {{user.firstName }}
+      </span>
+      <span>
+        {{ user.lastName}}
+      </span>      
+      <span>
+        {{ user.email }}
+      </span>
+      <span>
+        <select [(ngModel)]="selectedTutor"  class="form-control">
+          <option [value]="usr.id" *ngFor="let usr of tutors"> {{usr.firstName}}</option>
+        </select>
+      </span>
+
+      <span>
+        <input [(ngModel)]="sessionTime" type="text" name="sessionTime" placeholder="enter session Time" class="form-control">
+    </span>
+    
+      <span>
+        <button class="btn btn-primary" (click)="saveSession(user)" >Submit</button>
+      </span>
+    </li>
+  {{sessionTime}}
+
+  {{datetime}}
+  </ul> -->
+
+
+  <table id="customers">
+    <thead>
+        <th>First Name</th>
+        <th>Last  Name</th>
+        <th>Email</th>
+        <th>tutor</th>
+        <th>time</th>
+        <th>action</th>
+
+
+      
+
+        
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td> 
+               <select [(ngModel)]="selectedTutor"  class="form-control">
+              <option [value]="usr.id" *ngFor="let usr of tutors"> {{usr.firstName}}</option>
+            </select>
+        </td>
+       <td>        <input [(ngModel)]="sessionTime" type="text" name="sessionTime" placeholder="enter session Time" class="form-control">
+       </td>
+        <td> <button class="btn btn-primary" (click)="saveSession(user)" >Submit</button>
+        </td>  
+      </tr>
+        
+    </tbody>
+</table>
+
+</div>
+
+
+  
